@@ -1,21 +1,28 @@
+import selenium
 from selenium import webdriver
+from selenium.webdriver.common.by import By
+from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.support.ui import WebDriverWait
+from selenium.webdriver.support import expected_conditions as EC
+from selenium.webdriver.chrome.options import Options
 import time
-from webdriver_manager.chrome import ChromeDriverManager
 import pyautogui
 
-driver = webdriver.Chrome(ChromeDriverManager().install())
+driver = webdriver.Chrome(
+    executable_path="C:\chromedriver.exe"
+)
 driver.maximize_window()
 driver.get('https://ssoa.testpedia.in/')
 
 user_input = driver.find_element_by_id('UserName')
 
-user_input.send_keys("") #Write Your Id 
+user_input.send_keys("sfgrgggf") #Write Your Id 
 
 password_input = driver.find_element_by_id('Password')
 
 
 
-password_input.send_keys("") #Write Your Password 
+password_input.send_keys("rddfdfd") #Write Your Password 
 
 signin_button = driver.find_element_by_id("LoginButton")
 
