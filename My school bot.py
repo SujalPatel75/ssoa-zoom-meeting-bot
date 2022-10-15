@@ -14,7 +14,9 @@ driver = webdriver.Chrome(
 driver.maximize_window()
 driver.get('https://ssoa.testpedia.in/')
 
-user_input = driver.find_element_by_id('UserName')
+user_input = driver.find_element_by_id("Username")
+
+time.sleep(4)
 
 user_input.send_keys("sfgrgggf") #Write Your Id 
 
