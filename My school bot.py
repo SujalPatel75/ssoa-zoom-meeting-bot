@@ -18,13 +18,13 @@ user_input = driver.find_element_by_id("Username")
 
 time.sleep(4)
 
-user_input.send_keys("sfgrgggf") #Write Your Id 
+user_input.send_keys(" ") #Write Your Id 
 
 password_input = driver.find_element_by_id('Password')
 
 
 
-password_input.send_keys("rddfdfd") #Write Your Password 
+password_input.send_keys(" ") #Write Your Password 
 
 signin_button = driver.find_element_by_id("LoginButton")
 
